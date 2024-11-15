@@ -69,3 +69,8 @@ func write(cfg Config) error {
 
 	return nil
 }
+
+// Add this method to your config package
+func (cfg *Config) GetUser() string {
+	return cfg.CurrentUserName
+}
